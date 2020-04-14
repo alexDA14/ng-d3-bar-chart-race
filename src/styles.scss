@@ -5,6 +5,7 @@ body {
   font-family: "Open Sans", Arial, sans-serif;
   color: #666666;
   min-height: 100vh;
+  background-color: #f1f1f1;
 }
 body * { box-sizing: border-box }
 
@@ -20,9 +21,6 @@ body * { box-sizing: border-box }
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #e6e6e6;
-    border: 1px solid #CCCCCC;
-    cursor: pointer;
     transition: top .5s ease;
   }
 }

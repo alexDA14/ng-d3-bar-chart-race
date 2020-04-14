@@ -36,7 +36,7 @@
     const height = 600;
     const width = 1080;
     const margin = {
-      top: 55,
+      top: 78,
       right: 100,
       bottom: 5,
       left: 0
@@ -46,7 +46,8 @@
 
     let title = svg.append('text')
       .attr('class', 'title')
-      .attr('y', 24)
+      .attr('y', 36)
+      .attr('x', 180)
       .html(data.options[ 1 ].value);
 
     let year = 1960;
@@ -140,8 +141,8 @@
 
     let yearText = svg.append('text')
       .attr('class', 'yearText')
-      .attr('x', width - (margin.right + 30))
-      .attr('y', height - 25)
+      .attr('x', 150)
+      .attr('y', 48)
       .style('text-anchor', 'end')
       .html(~~year)
       .call(halo, 10);
@@ -296,11 +297,11 @@
     text.select(function () {
       return this.parentNode.insertBefore(this.cloneNode(true), this);
     })
-      .style('fill', '#ffffff')
-      .style('stroke', '#ffffff')
+      .style('fill', 'transparent')
+      .style('stroke', 'transparent')
       .style('stroke-width', strokeWidth)
       .style('stroke-linejoin', 'round')
-      .style('opacity', 1);
+      .style('opacity', 0);
   };
 </script>
 </body>
